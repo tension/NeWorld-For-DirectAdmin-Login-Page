@@ -45,6 +45,7 @@ hr {
 
 .login-form > div > div {
 	margin: 0 auto;
+	display: table;
 	background: #FFF;
 	border-radius: 4px;
 	border: 1px solid #E0E4E8;	
