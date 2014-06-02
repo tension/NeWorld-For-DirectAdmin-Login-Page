@@ -1,0 +1,163 @@
+/*
+  title: screen css
+  author: tension He (@tension)
+*/
+
+/* =imports
+---------------------------------------------- */
+
+@import url('http://mat1.elinkhost.com/_css/opensans.css');
+
+/* ------------------------------------------- */
+
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333;
+    background: #F5F5F5;
+    padding-top: 50px;
+}
+a {
+	color: #2C78B0;
+}
+
+hr {
+	margin: 15px 0;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+.alert {
+	margin-bottom: 15px;
+	position: relative;
+	line-height: 27px;
+	padding: 4px 38px 4px 14px;
+	color: #424239;
+	text-shadow: 0 1px rgba(255,255,255,0.3);
+	background: #fcf0b0;
+	border-radius: 2px;
+}
+.alert-red {
+	color: #FFF;
+	background: #F17163;
+	text-shadow: none;
+}
+
+.login-form > div > div {
+	margin: 0 auto;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #E0E4E8;	
+}
+.login-form .form-body {
+	padding: 20px;
+}
+.login-form h3 {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.login-form input[type=text],
+.login-form input[type=password] {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 8px;
+	height: 33px;
+	line-height: 19px;
+	color: #626262;
+	background: white;
+	border: 2px solid #d9d9d9;
+	border-radius: 2px;
+	box-shadow: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+.login-form input[type=text]:hover,
+.login-form input[type=password]:hover {
+	border-color: #ccc;
+}
+.login-form input[type=text]:focus,
+.login-form input[type=password]:focus {
+	color:#3c3c3c;
+	background:white;
+	border-color:#3fb6f2;
+	outline:none;
+	box-shadow: none;
+}
+.login-form .control-group {
+	margin-bottom: 15px;
+}
+.login-form .control-group input {
+	margin-top: 5px;
+}
+.login-form .control {
+	border-top: 1px solid #E0E4E8;	
+	background: #F9FAFC;
+	padding: 15px 20px;
+	border-radius: 0 0 4px 4px;
+	text-align: right;
+}
+.login-form .control a {
+	float: left;
+	margin-top: 5px;
+	border-bottom: 1px dotted #2C78B0;
+	text-decoration: none;
+}
+.login-form label {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+}
+.login-form label small {
+	float: right;
+	font-size: 13px;
+	cursor: pointer;
+}
+.login-form label small a {
+	border-bottom: 1px dotted #2C78B0;
+	text-decoration: none;
+}
+.button {
+	font-family: "Open Sans", sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	height: 33px;
+	line-height: 1;
+	padding: 0 16px;
+	font-size: 13px;
+	color: #243140;
+	text-align: center;
+	text-shadow: 0 1px rgba(255,255,255,0.2);
+	background: #e5e7ed;
+	border: 0;
+	border-radius: 2px;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 90px;
+}
+.button-dark-blue {
+	color: white;
+	text-shadow: 0 1px rgba(0,0,0,0.08);
+	background: #3061a3;
+}
+.button-dark-blue:hover {
+	color: white;
+	background: #3974c3;
+}
+
+@media (max-width: 768px) {
+	.pure-g:after {
+		content: "Designed by tension";
+		letter-spacing: 0em;
+		width: 90%;
+		margin: 5px auto;
+		text-align: center;
+	}
+	.pure-g [class *="pure-u"] {
+		width: 90%;
+	}
+}
