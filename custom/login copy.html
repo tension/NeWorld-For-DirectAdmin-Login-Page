@@ -1,0 +1,71 @@
+|?FAILEDLOGIN=<div class="ui red message"><i class="ban icon"></i> 用户名或密码错误.</div>|
+<!DOCTYPE HTML>
+<!--
+_/_/_/_/_/  _/_/_/_/  _/      _/    _/_/_/  _/_/_/    _/_/    _/      _/   
+   _/      _/        _/_/    _/  _/          _/    _/    _/  _/_/    _/    
+  _/      _/_/_/    _/  _/  _/    _/_/      _/    _/    _/  _/  _/  _/     
+ _/      _/        _/    _/_/        _/    _/    _/    _/  _/    _/_/      
+_/      _/_/_/_/  _/      _/  _/_/_/    _/_/_/    _/_/    _/      _/
+-->
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>|HOSTNAME| - DirectAdmin - Poweder by elinkhost.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" class="ui" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.4/semantic.min.css?v=|VERSION|">
+    <link href="images/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="pusher">
+		<div class="container">
+		<div class="ui two column centered grid login-form">
+			<div class="column">
+				
+				<div class="ui two column centered grid">
+					<div class="column">
+						<h1><i class="world icon" style="color:#6ED9A0;"></i> NeWorld</h1>
+					</div>
+					<div class="column">
+						
+						<form method="post" action="/CMD_LOGIN" name="loginForm" id="loginForm">
+						<input type="hidden" value="/" name="referer"/>
+						<input type="hidden" value="http://www.elinkhost.com" name="LOGOUT_URL"/>
+							<div class="ui large form">
+						
+								<div class="field">
+									<label for="username">Username:</label>
+									<input type="text" id="username" name="username" placeholder="Username">
+								</div>
+					
+								<div class="field">
+									<label for="password">Password: </label>
+									<input type="password" id="password" name="password" placeholder="Password">
+								</div>
+								
+								<div class="field">
+									<button type="submit" class="large fluid ui button">Login</button>
+								</div>
+						
+								|FAILEDLOGIN|
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				|*if LOST_PASSWORD="yes"|
+				<div class="sixteen wide column centered grid right">
+					<div class="column">
+						<a href="/CMD_LOST_PASSWORD" tabindex="2">找回密码?</a>
+					</div>
+				</div>
+				|*endif|
+			</div>
+		</div>
+		<div class="footer">
+			Powered By <a href="http://www.directadmin.com" target="_blank">DirectAdmin</a> Design By <a href="http://tension.name" target="_blank">teNsion</a> and <a href="http://NeWord.org" target="_blank">NeWorld Team</a>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
